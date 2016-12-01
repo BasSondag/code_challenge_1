@@ -1,4 +1,3 @@
-
 module.exports = (function(){
 	return {
 		index: function(req, res, next){
@@ -11,12 +10,10 @@ module.exports = (function(){
 	  		});	
 		},
 		create: function(req, res, next){
-			console.log('succes')
 			res.redirect('back', function(err, next){
 				res.set('Content-Type', 'text/plain')
 				res.send('universe')
 			});	
-
 		},        
 		unknown: function(req,res,next){
 			res.redirect('back', function(err, res){
